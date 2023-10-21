@@ -7,7 +7,7 @@ app = Flask(__name__)
 chat_history = []
 
 
-@app.route("respond", methods=["GET"])
+@app.route("/respond", methods=["GET"])
 def assistant_respond():
     msg = request.args.get('msg')
     res = assistant.respond(msg, chat_history)
@@ -31,4 +31,4 @@ def assistant_respond():
 
 
 if __name__ == '__main__':
-    app.run(port=8001)
+    app.run(port=8001, debug=True)
