@@ -15,7 +15,7 @@ def promptModify(msg):
         * In this case, it modifies msg to give financial advice.
     """
 
-    modified = f"SUPPOSE YOU ARE A FINANCIAL ADVISOR. YOU ARE TASKED WITH GIVING CREDIT CARD ADVICE TO A PERSON, WHO SENDS YOU A QUESTION msg. IF THE QUESTION msg IS NOT RELATED TO FINANCE, REPOND SIMPLY WITH 'Sorry, I can only help with finance questions.' OTHERWISE (THE QUESTION IS RELATED TO FINANCE), I WANT YOU TO GIVE THE ADVICE AS IF YOU ARE A FINANCIAL ADVISOR.: msg = ({msg})"
+    modified = f"SUPPOSE YOU ARE A FINANCIAL ADVISOR. YOU ARE TASKED WITH GIVING CREDIT CARD ADVICE TO A PERSON, WHO SENDS YOU A QUESTION msg. IF THE QUESTION msg IS NOT RELATED TO FINANCE, REPOND SIMPLY WITH 'Sorry, I can only help with finance questions, are there any other finance questions you need help with?' OTHERWISE (THE QUESTION IS RELATED TO FINANCE), I WANT YOU TO GIVE THE ADVICE AS IF YOU ARE A FINANCIAL ADVISOR.: msg = ({msg})"
 
     return modified
 
